@@ -94,7 +94,6 @@ $('clear').onclick = () => { strokes = []; redraw(); };
 
 // --- Export (white background baked in) ---
 $('save').onclick = () => {
-    $('TestInfo').innerHTML = "big big big";
     const out = document.createElement('canvas');
     out.width = canvas.width; out.height = canvas.height;
     const octx = out.getContext('2d');
@@ -109,5 +108,4 @@ $('save').onclick = () => {
         URL.revokeObjectURL(a.href);
     }, 'image/png');
 };
-
 resize()
